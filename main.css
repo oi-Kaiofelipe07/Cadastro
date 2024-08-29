@@ -1,0 +1,66 @@
+body{
+    background-image: url(./fotos/imagem.jpg);
+    display: flex;
+    align-items: center;
+    height: 100vh; /* Define a altura do body para 100% da altura da viewport */
+    margin: 0;
+}
+
+
+input[type=text], input[type=email], input[type=tel], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+h1{
+    text-align: center;
+    margin-top: 24px;
+}
+
+
+label {
+    padding-top: 12px;
+    display: inline-block;
+    font-size: larger;
+}
+
+
+button {
+    margin-top: 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 24px;
+}
+
+  /* Estilizando o container */
+.container {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.748); 
+    padding: 20px;
+    display:block;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    max-width: 600px;
+}
+
+
+  /* Layout responsivo - quando a tela tiver menos de 600px de largura, as duas colunas empilham uma sobre a outra */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, button {
+    width: 100%;
+    margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    .container {
+        width: 70%; /* Ajusta a largura para tablets */
+    }
+
+}
